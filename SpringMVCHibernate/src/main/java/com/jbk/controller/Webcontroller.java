@@ -31,8 +31,6 @@ public class Webcontroller {
 	@RequestMapping(path = "/logindata")
 	public String logincheck(@RequestParam("username") String username, @RequestParam("password") String password,
 			Model model) {
-		
-		System.out.println("pavan nagargoje");
 
 		List<Employee> elist = service.logincheck(username, password);
 
